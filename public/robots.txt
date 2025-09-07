@@ -1,0 +1,39 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /auth
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /auth
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Allow: /updates
+Allow: /research
+Disallow: /admin
+Disallow: /auth
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://momta.org/sitemap.xml
+
+# SEO optimization - Allow static assets
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Crawl delay for general bots
+Crawl-delay: 1
